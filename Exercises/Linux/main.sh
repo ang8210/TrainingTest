@@ -5,9 +5,7 @@ pwd
 #     - True： do (3)
 #     - False： Print out "No file!" on the terminal
 if [ -f ./'hello.sh' ];then
-	while read line ;do
-		echo "$line"
-	done < hello.sh
+	cat hello.sh
 else
 	echo "NO file!"
 fi
